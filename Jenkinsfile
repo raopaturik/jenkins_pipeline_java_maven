@@ -7,6 +7,7 @@ pipeline {
         stage('Example') {
             steps {
                bat 'mvn --version'
+               bat 'mvn clean'
             }
         }
     }
