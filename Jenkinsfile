@@ -4,10 +4,12 @@ pipeline {
         maven 'Maven' 
     }
     stages {
-        stage('Example') {
+        stage('Build') {
             steps {
+               echo 'Build starting' 
                sh 'mvn --version'
                sh 'mvn clean'
+               echo 'Build Completed'
                 
             }
         }
